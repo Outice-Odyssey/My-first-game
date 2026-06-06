@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://ccv6aqb7smhfo"]
+
+[node name="Battle" type="Control" unique_id=1106304804]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Background" type="ColorRect" parent="." unique_id=1766756952]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="EnemyArea" type="ColorRect" parent="." unique_id=1915143185]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="EnemyName" type="Label" parent="EnemyArea" unique_id=1803679614]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="BattleMenu" type="ColorRect" parent="." unique_id=134931253]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="AttackOption" type="Label" parent="BattleMenu" unique_id=647605177]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ItemOption" type="Label" parent="BattleMenu/AttackOption" unique_id=840128943]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="PlayerArea" type="ColorRect" parent="." unique_id=1253792899]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PlayerName" type="Label" parent="PlayerArea" unique_id=944708340]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="PlayerHpBar" type="ProgressBar" parent="PlayerArea" unique_id=1802349040]
+layout_mode = 0
+offset_right = 4.0
+offset_bottom = 27.0
+
+[node name="PlayerHpLabel" type="Label" parent="PlayerArea/PlayerHpBar" unique_id=1266537720]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="EnemyHpArea" type="ColorRect" parent="." unique_id=300362543]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="EnemyHpLabel" type="Label" parent="EnemyHpArea" unique_id=1124769653]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="EnemyHpBar" type="ProgressBar" parent="EnemyHpArea/EnemyHpLabel" unique_id=1391101675]
+layout_mode = 0
+offset_right = 4.0
+offset_bottom = 27.0
+
+[node name="MessageBox" type="ColorRect" parent="." unique_id=1626703252]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MessageLabel" type="Label" parent="MessageBox" unique_id=1402658983]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
