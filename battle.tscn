@@ -1,82 +1,90 @@
 [gd_scene format=3 uid="uid://ccv6aqb7smhfo"]
 
-[node name="Battle" type="Control" unique_id=1106304804]
-layout_mode = 3
-anchors_preset = 0
+[ext_resource type="Script" uid="uid://boaik1ekgpi8e" path="res://battle.gd" id="1_ip7xm"]
+
+[node name="Battle" type="Node2D" unique_id=1965596786]
+script = ExtResource("1_ip7xm")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1975478695]
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Background" type="ColorRect" parent="." unique_id=1766756952]
-layout_mode = 0
+[node name="EnemyArea" type="Node2D" parent="." unique_id=1979784820]
+
+[node name="Panel" type="TextureRect" parent="EnemyArea" unique_id=546566366]
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="EnemyArea" type="ColorRect" parent="." unique_id=1915143185]
-layout_mode = 0
+[node name="EnemySprite" type="Sprite2D" parent="EnemyArea" unique_id=1919546603]
+
+[node name="EnemyName" type="Label" parent="EnemyArea/EnemySprite" unique_id=1661191637]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="EnemyHpArea" type="Node2D" parent="." unique_id=976057259]
+
+[node name="Panel" type="TextureRect" parent="EnemyHpArea" unique_id=1218167576]
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="EnemyName" type="Label" parent="EnemyArea" unique_id=1803679614]
+[node name="EnemyHpBg" type="ColorRect" parent="EnemyHpArea" unique_id=407506881]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="EnemyHpFill" type="ColorRect" parent="EnemyHpArea" unique_id=1622693973]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="EnemyHpLabel" type="Label" parent="EnemyHpArea/EnemyHpFill" unique_id=1771282343]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
 
-[node name="BattleMenu" type="ColorRect" parent="." unique_id=134931253]
-layout_mode = 0
+[node name="BattleMenu" type="Node2D" parent="." unique_id=676284488]
+
+[node name="Panel" type="TextureRect" parent="BattleMenu" unique_id=83159163]
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="AttackOption" type="Label" parent="BattleMenu" unique_id=647605177]
+[node name="AttackOption" type="Label" parent="BattleMenu" unique_id=1754870875]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ItemOption" type="Label" parent="BattleMenu/AttackOption" unique_id=1751961390]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
 
-[node name="ItemOption" type="Label" parent="BattleMenu/AttackOption" unique_id=840128943]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+[node name="MessageBox" type="Node2D" parent="." unique_id=1509240404]
 
-[node name="PlayerArea" type="ColorRect" parent="." unique_id=1253792899]
-layout_mode = 0
+[node name="Panel" type="TextureRect" parent="MessageBox" unique_id=833521901]
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="PlayerName" type="Label" parent="PlayerArea" unique_id=944708340]
+[node name="MessageLabel" type="Label" parent="MessageBox/Panel" unique_id=1311114800]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
 
-[node name="PlayerHpBar" type="ProgressBar" parent="PlayerArea" unique_id=1802349040]
-layout_mode = 0
-offset_right = 4.0
-offset_bottom = 27.0
+[node name="PlayerArea" type="Node2D" parent="." unique_id=758976818]
 
-[node name="PlayerHpLabel" type="Label" parent="PlayerArea/PlayerHpBar" unique_id=1266537720]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-
-[node name="EnemyHpArea" type="ColorRect" parent="." unique_id=300362543]
-layout_mode = 0
+[node name="Panel" type="TextureRect" parent="PlayerArea" unique_id=848832508]
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="EnemyHpLabel" type="Label" parent="EnemyHpArea" unique_id=1124769653]
-layout_mode = 0
+[node name="PlayerHpBg" type="ColorRect" parent="PlayerArea" unique_id=1990648977]
 offset_right = 40.0
 offset_bottom = 23.0
 
-[node name="EnemyHpBar" type="ProgressBar" parent="EnemyHpArea/EnemyHpLabel" unique_id=1391101675]
-layout_mode = 0
-offset_right = 4.0
-offset_bottom = 27.0
-
-[node name="MessageBox" type="ColorRect" parent="." unique_id=1626703252]
-layout_mode = 0
+[node name="PlayerHpFill" type="ColorRect" parent="PlayerArea" unique_id=2024123763]
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="MessageLabel" type="Label" parent="MessageBox" unique_id=1402658983]
+[node name="PlayerHpLabel" type="Label" parent="PlayerArea/PlayerHpFill" unique_id=644693499]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
+
+[node name="SfxPlayer" type="AudioStreamPlayer" parent="." unique_id=1230916569]
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="." unique_id=1248492881]

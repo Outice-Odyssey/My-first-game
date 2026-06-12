@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://cto5bc2fl8qv2"]
+
+[ext_resource type="Script" uid="uid://ba3bu8cpam40w" path="res://inventory.gd" id="1_pohso"]
+
+[node name="Inventory" type="Node2D" unique_id=1901203690]
+script = ExtResource("1_pohso")
+
+[node name="Background" type="ColorRect" parent="." unique_id=927558737]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.039215688, 0.039215688, 0.039215688, 1)
+
+[node name="Title" type="Label" parent="." unique_id=502612910]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ItemList" type="Node2D" parent="." unique_id=2016393726]
+
+[node name="EquipButton" type="Label" parent="." unique_id=1281116846]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="StatsPanel" type="Node2D" parent="." unique_id=2046588250]
+
+[node name="Panel" type="TextureRect" parent="StatsPanel" unique_id=981532214]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="StatsLabel" type="Label" parent="StatsPanel" unique_id=1330618012]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="MessageLabel" type="Label" parent="." unique_id=912182289]
+offset_right = 40.0
+offset_bottom = 23.0

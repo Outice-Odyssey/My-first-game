@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cgiqh3adq6f0p"]
+
+[ext_resource type="Script" uid="uid://db6u0ty4a48m" path="res://title_screen.gd" id="1_v6p8y"]
+
+[node name="TitleScreen" type="Node2D" unique_id=267309504]
+script = ExtResource("1_v6p8y")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1135124826]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.039215688, 0.039215688, 0.039215688, 1)
+
+[node name="MenuList" type="Node2D" parent="." unique_id=1144058535]
+position = Vector2(430, 350)
+
+[node name="Tagline" type="Label" parent="." unique_id=1739393981]
+offset_left = 300.0
+offset_top = 550.0
+offset_right = 340.0
+offset_bottom = 573.0

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bk6rsrwyct40q"]
+
+[ext_resource type="Script" uid="uid://diqmw15118m5f" path="res://game_menu.gd" id="1_jowre"]
+
+[node name="GameMenu" type="Node2D" unique_id=990924749]
+script = ExtResource("1_jowre")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1901351393]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.039215688, 0.039215688, 0.039215688, 1)
+
+[node name="MenuList" type="Node2D" parent="." unique_id=141561250]
+position = Vector2(400, 200)
