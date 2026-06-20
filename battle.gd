@@ -264,6 +264,7 @@ func use_item():
 		GameData.active_buffs["buff_turns"] -= 1
 		if GameData.active_buffs["buff_turns"] == 0:
 			GameData.active_buffs["attack_buff"] = 0
+		
 			message_label.text = "Attack buff wore off."
 
 
